@@ -1,0 +1,130 @@
+.scheme-detail-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.scheme-title {
+  font-size: 24px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.note {
+  font-style: italic;
+  color: #555;
+}
+
+.user-data-status {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.user-data-status.complete {
+  border: 1px solid green;
+  background-color: #e6ffe6;
+}
+
+.user-data-status.incomplete {
+  border: 1px solid orange;
+  background-color: #fff5e6;
+}
+
+.user-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.image-block {
+  grid-column: 1 / span 2;
+  margin-top: 10px;
+}
+
+.image-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.preview-img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.preview-img-small {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.print-btn {
+  padding: 10px 14px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status-message.success {
+  color: green;
+  font-weight: bold;
+}
+
+.status-message.error {
+  color: red;
+  font-weight: bold;
+}
+
+.loading-message,
+.error-message,
+.not-found-message {
+  text-align: center;
+  font-size: 16px;
+}
